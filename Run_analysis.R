@@ -1,8 +1,5 @@
 ## Getting and Cleaning Data Project
 
-
-library(tidy_proj)
-
 #Clean environment
 rm(list=ls())
 
