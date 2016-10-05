@@ -1,5 +1,10 @@
 ## Getting and Cleaning Data Project
 
+#Load the libraries
+library(plyr)
+library(dplyr)
+library(tidyr)
+
 #Clean environment
 rm(list=ls())
 
