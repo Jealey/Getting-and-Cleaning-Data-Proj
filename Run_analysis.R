@@ -3,9 +3,6 @@
 #Clean environment
 rm(list=ls())
 
-#check working directory
-getwd()
-
 #Download and unzip data
 download("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", dest = "UCI_HAR.zip", mode = "wb")
 unzip("UCI_HAR.zip", exdir = "./")
