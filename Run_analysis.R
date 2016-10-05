@@ -24,12 +24,12 @@ features_proj.names = gsub('-std', 'Std', features_proj.names)
 features_proj.names <- gsub('[-()]', '', features_proj.names)
 
 # Load the datasets
-train <- read.table("UCI HAR Dataset/train/X_train.txt")[featuresWanted]
+train <- read.table("UCI HAR Dataset/train/X_train.txt")[features_proj]
 trainActivities <- read.table("UCI HAR Dataset/train/Y_train.txt")
 trainSubjects <- read.table("UCI HAR Dataset/train/subject_train.txt")
 train <- cbind(trainSubjects, trainActivities, train)
 
-test <- read.table("UCI HAR Dataset/test/X_test.txt")[featuresWanted]
+test <- read.table("UCI HAR Dataset/test/X_test.txt")[features_proj]
 testActivities <- read.table("UCI HAR Dataset/test/Y_test.txt")
 testSubjects <- read.table("UCI HAR Dataset/test/subject_test.txt")
 test <- cbind(testSubjects, testActivities, test)
