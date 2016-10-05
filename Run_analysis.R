@@ -4,8 +4,8 @@
 rm(list=ls())
 
 #Download and unzip data
-download("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", dest = "UCI_HAR.zip", mode = "wb")
-unzip("UCI_HAR.zip", exdir = "./")
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile = "UCI_HAR.zip")
+unzip("UCI_HAR.zip")
 
 # Load activity labels and features
 ACTIVITY <- read.table("UCI HAR Dataset/activity_labels.txt")
