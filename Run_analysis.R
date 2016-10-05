@@ -3,16 +3,15 @@
 
 library(tidy_proj)
 
-files <- "getdata_dataset.zip"
+#Clean environment
+rm(list=ls())
 
-## Download and unzip the dataset:
-if (!file.exists(filename)){
-fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "
-download.file(fileURL, files, method="curl")
-} 
-if (!file.exists("UCI HAR Dataset")) { 
-unzip(files) 
-}
+#check working directory
+getwd()
+
+#Download and unzip data
+download("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", dest = "UCI_HAR.zip", mode = "wb")
+unzip("UCI_HAR.zip", exdir = "./")
 
 # Read in data
 features = read.table('./features.txt',header=FALSE); #imports features.txt 
