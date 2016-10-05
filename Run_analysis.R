@@ -8,9 +8,9 @@ download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUC
 unzip("UCI_HAR.zip")
 
 # Load activity labels and features
-ACTIVITY <- read.table("UCI HAR Dataset/activity_labels.txt")
+ACTIVITY <- read.table("UCI HAR/activity_labels.txt")
 ACTIVITY[,2] <- as.character(ACTIVITY[,2])
-features <- read.table("UCI HAR Dataset/features.txt")
+features <- read.table("UCI HAR/features.txt")
 features[,2] <- as.character(features[,2])
 
 # Extracts only the measurements on the mean and standard deviation for each measurement
@@ -21,14 +21,14 @@ features_proj.names = gsub('-std', 'Std', features_proj.names)
 features_proj.names <- gsub('[-()]', '', features_proj.names)
 
 # Load the datasets
-train <- read.table("UCI HAR Dataset/train/X_train.txt")[features_proj]
-trainActivities <- read.table("UCI HAR Dataset/train/Y_train.txt")
-trainSubjects <- read.table("UCI HAR Dataset/train/subject_train.txt")
+train <- read.table("UCI HAR/train/X_train.txt")[features_proj]
+trainActivities <- read.table("UCI HAR/train/Y_train.txt")
+trainSubjects <- read.table("UCI HAR/train/subject_train.txt")
 train <- cbind(trainSubjects, trainActivities, train)
 
-test <- read.table("UCI HAR Dataset/test/X_test.txt")[features_proj]
-testActivities <- read.table("UCI HAR Dataset/test/Y_test.txt")
-testSubjects <- read.table("UCI HAR Dataset/test/subject_test.txt")
+test <- read.table("UCI HAR/test/X_test.txt")[features_proj]
+testActivities <- read.table("UCI HAR/test/Y_test.txt")
+testSubjects <- read.table("UCI HAR/test/subject_test.txt")
 test <- cbind(testSubjects, testActivities, test)
 
 # merge datasets and labels the dataset with descriptive variable names
