@@ -10,13 +10,6 @@ getwd()
 download("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", dest = "UCI_HAR.zip", mode = "wb")
 unzip("UCI_HAR.zip", exdir = "./")
 
-# Read in data
-features = read.table('./features.txt',header=FALSE); #imports features.txt 
-ACTIVITY = read.table('./activity_labels.txt',header=FALSE); #imports activity_labels.txt
-SUBJECT = read.table('./train/subject_train.txt',header=FALSE); #imports subject_train.txt 
-x_Train = read.table('./train/x_train.txt',header=FALSE); #imports x_train.txt 
-y_Train = read.table('./train/y_train.txt',header=FALSE); #imports y_train.txt 
-
 # Load activity labels and features
 ACTIVITY <- read.table("UCI HAR Dataset/activity_labels.txt")
 ACTIVITY[,2] <- as.character(ACTIVITY[,2])
