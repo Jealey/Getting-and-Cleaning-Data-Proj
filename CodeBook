@@ -4,8 +4,8 @@ This code book modifies and updates the available codebooks with the data to ind
 
 Identifiers
 
-subject - The ID given to the test subject
-activity - The type of activity performed when the corresponding measurements were recorded
+SUBJECT- The ID given to the test subect
+ACTIVITY- The type of activity performed when the corresponding measurements were recorded
 
 
 Measurements
