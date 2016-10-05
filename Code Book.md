@@ -2,13 +2,13 @@
 
 ##This code book modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information in tidy.x.
 
-#Identifiers
+#Variables
 
-###SUBJECT- The ID given to the test subect
+###SUBJECT- The ID given to the test subject
 ###ACTIVITY- The type of activity performed when the corresponding measurements were recorded
 
 
-#Measurements
+#Summaries
 
 ##- Features are normalized and bounded within [-1,1]. 
 ##- Each feature vector is a row on the 'X' and 'y' files. 
