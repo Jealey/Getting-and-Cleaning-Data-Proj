@@ -15,7 +15,7 @@
 ##- The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2). (Acc)
 ##- The gyroscope units are rad/seg. (Gyro)
 
-###tBodyAcc_MeanX                 ###tBodyGyroJerkMag_Std
+###tBodyAcc_MeanX                 
 ###fBodyAcc_MeanX
 ###fBodyAcc_MeanY
 ###fBodyAcc_MeanZ
@@ -54,6 +54,7 @@
 ###fBodyBodyGyroMag_MeanFreq
 ###fBodyBodyGyroJerkMag_Mean
 ###fBodyBodyGyroJerkMag_Std
+###tBodyGyroJerkMag_Std
 ###fBodyBodyGyroJerkMag_MeanFreq
 ###tBodyAcc_MeanY
 ###tBodyAcc_MeanZ
